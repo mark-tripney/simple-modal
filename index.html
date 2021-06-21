@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="modal">
+        <h2>A modal window</h2>
+        <p>
+          This is a simple modal window demonstration. I wondered about
+          accessibility issues with
+          <span class="monospace">display: none</span>, but
+          <a
+            href="https://webaim.org/techniques/css/invisiblecontent/#techniques"
+            target="_blank"
+            >WebAIM</a
+          >
+          notes that, for a use-case like this, it's fine: we're hiding the
+          content from
+          <span class="italicise">all</span> users.
+        </p>
+        <button id="close-modal" class="btn">Close</button>
+      </div>
+    </div>
+    <h1>Click to reveal the modal</h1>
+    <button id="open-modal" class="btn">Open modal</button>
+    <script src="js/script.js"></script>
+  </body>
+</html>
